@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bat Man</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button id="themeToggle" class="btn outline" style="position:fixed; top:20px; right:20px; z-index:2000;">Theme</button>
+
+<section class="hero">
+  <div class="hero-text">
+    <ul class="hero-title">
+      <li>Bat</li>
+      <li>Man</li>
+    </ul>
+
+    <p id="countdown"></p>
+
+    <div class="buttons">
+      <button class="btn primary" id="bookBtn">Book Now</button>
+      <button class="btn outline" id="ticketsBtn">Tickets</button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="7129e8b01074ee426139d5e10bf2ea52.jpg" alt="Batman">
+  </div>
+</section>
+
+<div class="modal" id="bookModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Book Now</h2>
+    <form id="bookForm">
+      <input type="email" id="email" required placeholder="din@email.com">
+      <button type="submit" class="btn primary">Skicka</button>
+    </form>
+    <p class="confirmation"></p>
+  </div>
+</div>
+
+<div class="modal" id="ticketsModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Välj biljetter</h2>
+    <form id="ticketsForm">
+      <input type="date" id="date" required>
+      <input type="number" id="quantity" min="1" max="10" value="1" required>
+      <button type="submit" class="btn primary">Boka</button>
+    </form>
+    <p class="confirmation"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
